@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table {
+      background-color: #96D5D4;
+    }
+    td, h2 {
+      text-align: center;
+    }
+    table, th, td {
+      border:1px solid white;
+    }
+  </style>
+  <body>
+
+    <h2>A Food Item table</h2>
+    <form action="/items" method="GET">
+      <table style="width:100%">
+        <tr>
+          <th>Item Name</th>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td><%= name %></td>
+          <td><%= category %></td>
+          <td>Rp <%= price %></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
