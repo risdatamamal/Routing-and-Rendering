@@ -3,7 +3,7 @@ set :protection, :except => :frame_options
 require_relative 'config'
 
 get '/' do
-  "Hello name: #{params[username]}"
+  "Welcome"
 end
 
 # New Items
